@@ -1,0 +1,2 @@
+This prints the 3 next weekdays where I am likely to be available for a job interview. My schedule is quite consistent, so I have created this script 
+to automate the process of finding dates where I am available.
