@@ -7,8 +7,11 @@ from tkinter import *
 from tkinter.ttk import Separator
 from tkinter import ttk
 
+#create window
 gui=Tk()
 
+#open settings file
+sf=open("settings.config","w")
 gui.title("Free Dates")
 gui.geometry("400x500")
 
@@ -41,8 +44,8 @@ def s_confirm(f):
 c_button=tk.Button(master,text="Confirm",command=lambda: s_confirm(f_selected.get()))
 
 #place date number settings
-d_num_label.grid(row=0,column=0)
-d_num_box.grid(row=0,column=1)
+d_num_label.grid(row=0,column=0,columnspan=2)
+d_num_box.grid(row=0,column=2)
 
 #place format options
 d_format_label.grid(row=1,column=0)
